@@ -9,7 +9,9 @@ ul {
 }
 ul li {
     cursor: pointer;
-    
+
+    font-size: 20px;
+
     height: 30px;
     padding-top: 5px;
     border-bottom: 1px dotted grey;
@@ -19,6 +21,7 @@ ul li:last-child {
 }
 ul li.checked {
     text-decoration: line-through;
+    color: gray;
 }
 
 #listInput {

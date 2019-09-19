@@ -17,6 +17,16 @@ for (let span of closeSpans) {
     console.log(span);
 }
 
+var list = document.querySelector('ul');
+console.log(list);
+
+list.addEventListener('click', (event) => {
+  if (event.target.tagName === 'LI') {
+    event.target.classList.toggle('checked');
+  }
+}, false);
+
+
 function createNewElement() {
     let inputValue = document.getElementById("listInput").value;
     if (inputValue === "") {
