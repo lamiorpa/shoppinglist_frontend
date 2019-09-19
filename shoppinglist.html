@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!-- Inspiration: https://www.w3schools.com/howto/howto_js_todolist.asp -->
+
+<html>
+
+<head>
+    <title>Shopping list</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML + Javascript -shoppinglist exercise">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Lari">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shoppinglist.css">
+    <link rel="icon" href="icon.ico">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Shopping list</h1>
+        <div id="contentInput">
+            <input type="text" id="listInput" placeholder="Content">
+            <span onclick="createNewElement()" class="addButton">Add</span>
+        </div>
+
+        <ul id="list">
+            <li>Olut</li>
+            <li>Sipsit</li>
+        </ul>
+    </div>
+</body>
+
+<!-- Loading javascript after html body -->
+<script type="text/javascript" src="shoppinglist.js"></script>
+
+</html>

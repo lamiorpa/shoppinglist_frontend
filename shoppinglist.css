@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+ul li {
+    cursor: pointer;
+    
+    height: 30px;
+    padding-top: 5px;
+    border-bottom: 1px dotted grey;
+}
+ul li:last-child {
+    border-bottom: none;
+}
+ul li.checked {
+    text-decoration: line-through;
+}
+
+#listInput {
+
+    height: 40px;
+    width: 75%;
+    padding: 10px;
+    margin: 0;
+    border: thin solid black;
+    border-radius: 5px 0px 0px 5px;
+
+    font-size: 16px;
+}
+
+#list {
+    margin-top: 10px;
+}
+
+.addButton {
+    text-align: center;
+    float: right;
+
+    cursor: pointer;
+    
+    height: 40px;
+    width: 20%;
+    padding: 10px;
+    border: thin solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    
+    transition: 0.2s;
+}
+/* https://stackoverflow.com/questions/17233804/how-to-prevent-sticky-hover-effects-for-buttons-on-touch-devices */
+@media (hover:hover) {
+    .addButton:hover {
+        background-color: gray;
+    }
+    .close:hover {
+        background-color: red;
+    }
+}
+
+.close {
+    cursor: pointer;
+
+    border: thin dotted;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    float: right;
+}
+
+#container {
+    width: 50vw;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        width: 95vw;
+    }
+}
