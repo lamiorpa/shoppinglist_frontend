@@ -17,15 +17,13 @@ for (let span of closeSpans) {
     console.log(span);
 }
 
+// Find the list in the page and give its items eventlisteners
 var list = document.querySelector('ul');
-console.log(list);
-
 list.addEventListener('click', (event) => {
   if (event.target.tagName === 'LI') {
     event.target.classList.toggle('checked');
   }
 }, false);
-
 
 function createNewElement() {
     let inputValue = document.getElementById("listInput").value;
@@ -42,13 +40,11 @@ function createNewElement() {
     let span = document.createElement("span");
     let icon = document.createTextNode("x")
     span.className = "close";
-
-
+    
     span.onclick = () => {
-        span.parentElement.parentElement.removeChild(span.parentElement);
-        console.log(span)
+        span.parentElement.parentElement.removeChild(span.parentElement); // ul-list removes child li
     }
-
+    
     span.appendChild(icon);
     li.appendChild(span);
 
