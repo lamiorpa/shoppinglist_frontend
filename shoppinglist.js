@@ -17,7 +17,7 @@ for (let span of closeSpans) {
     console.log(span);
 }
 
-// Find the list in the page and give its items eventlisteners
+// Find the list in the page and give its items eventlisteners for text strikethrough toggle
 var list = document.querySelector('ul');
 list.addEventListener('click', (event) => {
   if (event.target.tagName === 'LI') {
